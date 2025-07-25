@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Inventario</title>
+    <link rel="stylesheet" href="css/loginRegister.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Login Panel -->
+        <div class="panel login-panel move-left">
+            <div class="side">
+                <h2>Welcome Back!</h2>
+                <p>To keep connected with us please login<br>with your personal info</p>
+                <button class="side-btn" id="toSignIn">SIGN IN</button>
+            </div>
+            <div class="form-side">
+                <h2>Create Account</h2>
+                <div class="social-container">
+                    <button title="Sign up with Facebook">f</button>
+                    <button title="Sign up with Google">G+</button>
+                    <button title="Sign up with LinkedIn">in</button>
+                </div>
+                <div style="text-align:center; color:#888; margin-bottom:16px; font-size:0.95em;">
+                    or use your email for registration
+                </div>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="form-btn">SIGN UP</button>
+                </form>
+            </div>
+        </div>
+        <!-- Register Panel -->
+        <div class="panel register-panel">
+            <div class="form-side">
+                <h2>Sign in</h2>
+                <div class="social-container">
+                    <button title="Sign in with Facebook">f</button>
+                    <button title="Sign in with Google">G+</button>
+                    <button title="Sign in with LinkedIn">in</button>
+                </div>
+                <div style="text-align:center; color:#888; margin-bottom:16px; font-size:0.95em;">
+                    or use your account
+                </div>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <div class="forgot">Forgot your password?</div>
+                    <button type="submit" class="form-btn">SIGN IN</button>
+                </form>
+            </div>
+            <div class="side">
+                <h2>Hello, Friend!</h2>
+                <p>Enter your personal details and start<br>journey with us</p>
+                <button class="side-btn" id="toSignUp">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+<script src="js/loginRegister.js"></script>
+</body>
+</html>

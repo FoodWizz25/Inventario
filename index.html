@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inventario.css">
+    <title>Inventario</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left" style="position:relative;display:flex;align-items:center;">
+            <span class="logo-status-dot">🟢</span>
+            <img src="img/logo.png" alt="Logo" class="logo" style="width:56px;height:56px;background:#ffb300;border-radius:50%;margin-right:16px;">
+            <div>
+                <div style="font-size:1em;font-weight:bold;display:flex;align-items:center;">
+                    Oliver Coffee
+                </div>
+                <div style="font-size:.75em;color:#b0b8c1;">Sistema de Gestión de Inventario</div>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="header-btn"><span style="margin-right:6px;">🌞</span>Modo Claro</button>
+            <button class="header-btn"><span style="margin-right:6px;">⬇️</span>Exportar</button>
+            <span class="status-online"><span style="display:inline-block;width:10px;height:10px;background:#19c37d;border-radius:50%;margin-right:6px;"></span>Sistema Online</span>
+            <div class="user-info">
+                <b>Usuario Administrador</b>
+                <div style="font-size:0.7em;color:#b0b8c1;">Último acceso: Hoy 09:30</div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <button class="active" onclick="showContent(0)">Panel</button>
+        <button onclick="showContent(1)">Inventario</button>
+        <button onclick="showContent(2)">Proveedores</button>
+        <button onclick="showContent(3)">Pedidos</button>
+        <button onclick="showContent(4)">Alertas</button>
+        <button onclick="showContent(5)">Configuraciones</button>
+    </nav>
+    <div id="content">
+        <!-- Aquí se mostrará el contenido dinámico -->
+        <h2>Panel</h2>
+        <p>Bienvenido al panel principal del sistema de inventario.</p>
+    </div>
+    <script src="js/opciones.js"></script>
+</body>
+</html>
